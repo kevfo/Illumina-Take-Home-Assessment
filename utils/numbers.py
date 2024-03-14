@@ -2,8 +2,7 @@
 Contains several helper functions and constants to help convert between roman and arabic numerals.
 '''
 
-ARABIC_TO_ROMAN = {1 : 'I', 4 : 'IV', 5 : 'V', 9 : 'IX', 40 : 'XL', 50 : 'L', 90 : 'XC', 100 : 'C', 400 : 'CD',
-                   500 : 'D', 900 : 'CM', 1000 : 'M'}
+ARABIC_TO_ROMAN = {1 : 'I', 5 : 'V', 10 : 'X', 50 : 'L', 100 : 'C', 500 : 'D', 1000 : 'M'}
 ROMAN_TO_ARABIC = dict(list(map(lambda x : x[::-1], list(ARABIC_TO_ROMAN.items()))))
 
 def convert(number: str, to: str) -> str:
@@ -54,9 +53,9 @@ def convert(number: str, to: str) -> str:
         elif to == 'arabic':
             result, index = 0, 0
             while index < len(number):
-                num1 = ROMAN_TO_ARABIC(number[index])
+                num1 = ROMAN_TO_ARABIC[number[index]]
                 if index + 1 < len(number):
-                    num2 = ROMAN_TO_ARABIC(number[index + 1])
+                    num2 = ROMAN_TO_ARABIC[number[index + 1]]
                     if num1 >= num2:
                         result += num1
                         index += 1
@@ -66,6 +65,6 @@ def convert(number: str, to: str) -> str:
                 else:
                     result += num1
                     index += 1
-            return(result)
+            return(str(result))
     except Exception as e:
         print(f'The following error ocurred: "{e}"')

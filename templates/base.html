@@ -8,30 +8,40 @@
 
     <!-- For converting -->
     <script src = "{{ url_for('static', filename = 'js/convert.js') }}" defer> </script>
+    <script src = "{{ url_for('static', filename = 'js/animation.js') }}" defer> </script>
+
 </head>
 {% endblock %}
 
 {% block header %}
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light navbar-light ">
+<!-- Container wrapper -->
     <div class="container-fluid">
-        <button
-            data-mdb-collapse-init
-            class="navbar-toggler"
-            type="button"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="https://github.com/kevfo/Illumina-Take-Home-Assessment"> Numeric Converter 1.0 </a>
+
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a class = 'navbar-brand'> Numeral Converter 1.0 </p>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        </ul>
+
+        <ul class="navbar-nav d-flex flex-row me-1">
+            <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+            </li>
+        </ul>
         </div>
     </div>
+<!-- Container wrapper -->
 </nav>
+<!-- Navbar -->
 {% endblock %}
 
 {% block content %}

@@ -1,36 +1,39 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class = 'd-flex justify-content-center align-items-center vh-100 mx-auto'>
-    <form class = 'text-center'>
-        <div class = 'text-center mb-3 fw-bold'>
-            Roman to Arabic
+<div class = 'd-flex justify-content-center align-items-center vh-100 flex-column mx-auto'>
+    <h1 class="text-center mb-3">Convert...</h1>
+    <div class="d-flex justify-content-center align-items-center">
+        <form class = 'text-center'>
+            <div class = 'text-center mb-3 fw-bold'>
+                Roman to Arabic
+            </div>
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input id = "roman_input" placeholder = 'Roman numeral here!'/>
+            </div>
+            
+            <!-- Password input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input id="roman_result" placeholder = 'Result here...' disabled = 'disabled' />
+            </div>
+            <button type = 'button' class = 'btn btn-secondary' id = 'roman_to_arab'> Convert! </button>
+        </form>
+        <div class = 'mx-5'>
+            <p class = 'fs-2'> OR </p>
         </div>
-        <div data-mdb-input-init class="form-outline mb-4">
-            <input id = "roman_input" placeholder = 'Roman numeral here!'/>
-        </div>
-        
-        <!-- Password input -->
-        <div data-mdb-input-init class="form-outline mb-4">
-            <input id="roman_result" placeholder = 'Result here...' />
-        </div>
-        <button type = 'button' class = 'btn btn-secondary' id = 'roman_to_arab'> Convert! </button>
-    </form>
-    <div class = 'mx-5'>
-        <p class = 'fs-2'> OR </p>
+        <form class = 'text-center'>
+            <div class = 'text-center mb-3 fw-bold'>
+                Arabic to Roman 
+            </div>
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input id = "arabic_input" placeholder = 'Arabic numeral here!'/>
+            </div>
+            
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input id="arabic_results" placeholder = 'Result here...' disabled = 'disabled' />
+            </div>
+            <button type = 'button' class = 'btn btn-secondary' id = 'arab_to_roman'> Convert! </button>
+        </form>
     </div>
-    <form class = 'text-center'>
-        <div class = 'text-center mb-3 fw-bold'>
-            Arabic to Roman 
-        </div>
-        <div data-mdb-input-init class="form-outline mb-4">
-            <input id = "arabic_input" placeholder = 'Arabic numeral here!'/>
-        </div>
-        
-        <div data-mdb-input-init class="form-outline mb-4">
-            <input id="arabic_results" placeholder = 'Result here...' />
-        </div>
-        <button type = 'button' class = 'btn btn-secondary' id = 'arab_to_roman'> Convert! </button>
-    </form>
 </div>
 {% endblock %}

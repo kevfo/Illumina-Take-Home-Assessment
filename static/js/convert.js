@@ -8,6 +8,7 @@ to_arabic = () => {
         let result = document.querySelector('#arabic_results');
         result.value = data.result;
     })
+    .catch(error => alert('Unable to convert; do check your input!'));
 }
 
 // Callback for converting numeric to roman characters.
@@ -20,6 +21,7 @@ to_roman = () => {
         let result = document.querySelector('#roman_result');
         result.value = data.result;
     })
+    .catch(error => alert('Unable to convert; do check your input!'));
 }
 
 // Attaching event listeners here:

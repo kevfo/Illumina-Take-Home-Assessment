@@ -1,0 +1,39 @@
+<!-- All subsequent templates will extend off this one -->
+
+{% block setup %}
+<head>
+    <link href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel = "stylesheet" />
+    <link href = "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel = "stylesheet" />
+    <link href = "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel = "stylesheet" />
+
+    <!-- For converting -->
+    <script src = "{{ url_for('static', filename = 'js/convert.js') }}"> </script>
+</head>
+{% endblock %}
+
+{% block header %}
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <div class="container-fluid">
+        <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+        <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class = 'navbar-brand'> Numeral Converter 1.0 </p>
+        </div>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<!-- To be overwritten by subsequent templates -->
+{% endblock %}

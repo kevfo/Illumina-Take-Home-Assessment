@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class = 'd-flex justify-content-center align-items-center vh-100 mx-auto'>
+    <form class = 'text-center'>
+        <div class = 'text-center mb-3 fw-bold'>
+            Roman to Arabic
+        </div>
+        <div data-mdb-input-init class="form-outline mb-4">
+            <input type="email" id="form1Example1" placeholder = 'Roman numeral here!'/>
+        </div>
+        
+        <!-- Password input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <input type="password" id="form1Example2" placeholder = 'Result here...' />
+        </div>
+        <button type = 'button' class = 'btn btn-secondary' id = 'roman_to_arab'> Convert! </button>
+    </form>
+    <div class = 'mx-5'>
+        <p class = 'fs-2'> Or</p>
+    </div>
+    <form class = 'text-center'>
+        <div class = 'text-center mb-3 fw-bold'>
+            Arabic to Roman 
+        </div>
+        <div data-mdb-input-init class="form-outline mb-4">
+            <input type="email" id="form1Example1" placeholder = 'Arabic numeral here!'/>
+        </div>
+        
+        <div data-mdb-input-init class="form-outline mb-4">
+            <input type="password" id="form1Example2" placeholder = 'Result here...' />
+        </div>
+        <button type = 'button' class = 'btn btn-secondary' id = 'arab_to_roman'> Convert! </button>
+    </form>
+</div>
+{% endblock %}

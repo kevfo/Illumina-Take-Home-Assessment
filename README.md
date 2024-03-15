@@ -25,4 +25,4 @@ with minimal guidance.  To convert a roman or arabic numeral to its respective a
 numeral (lower-cased, upper-cased, and mixed-case) into the appropriate the form and click on the "Convert!" button below the respective form.  The
 web application should display the corresponding conversion after.
 
-For cases whereby an invalid input (i.e., invalid character) has been entered, a "???" will be displayed as a result instead.
+For cases where an invalid input (i.e., invalid character) has been entered, a "???" will be displayed as a result instead.

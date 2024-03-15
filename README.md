@@ -1,7 +1,6 @@
 # Roman to Arabic Number Converter
 
-This is a web application built using the Flask microframework that allows users to convert roman numerals to arabic numerals and vice versa.  
-This easy-to-use application features a front end made using the [MD Bootstrap](https://mdbootstrap.com/) library.  
+This is a web application built using the Flask microframework that allows users to convert roman numerals to arabic numerals and vice versa.  This easy-to-use application features a front end made using the [MD Bootstrap](https://mdbootstrap.com/) library.  
 
 A live version of the application is currently hosted on Render [here](https://illumina-take-home-assessment.onrender.com/) 
 (do note the load time - the application spins down with inactivity and may require additional time to be accessible).
